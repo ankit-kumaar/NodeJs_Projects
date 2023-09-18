@@ -1,0 +1,123 @@
+/* css for header  */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: teal;
+    padding: 10px;
+    color: #fff;
+
+}
+
+#premium-user {
+    display: none;
+    margin-left: 55%;
+    font-weight: bold;
+    font-size: large;
+    color: #FFDF29;
+
+}
+
+#logout-btn {
+    border: none;
+    margin-left: auto;
+    border-radius: 4px;
+    padding: 4px 10px;
+}
+
+#logout-btn:hover {
+    color: black;
+    background-color: #FFDF29;
+
+}
+
+
+.logo {
+
+    margin-left: 25px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+
+/* css for navbar */
+.navbar {
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-between;
+    background-color: #f6f6f2;
+    color: #fff;
+    padding: 0%;
+    box-shadow: 0 1px 8px rgb(0 0 0 / 0.2)
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+li a {
+    color: black;
+    font-size: larger;
+    text-decoration: none;
+}
+
+a:hover {
+
+    color: black;
+    text-decoration: underline;
+}
+
+a.active {
+    color: black;
+    text-decoration: underline;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px 20px;
+
+}
+
+ul {
+    display: flex;
+    box-sizing: border-box;
+    margin: auto;
+    margin-left: 0px;
+}
+
+#add-expense-icon {
+    width: 50px;
+    height: 50px;
+}
+
+#leaderboard-icon {
+    width: 25px;
+    height: 25px;
+}
+
+#view-expense-icon {
+    width: 25px;
+    height: 25px;
+}
+
+#buy-premium-icon {
+    width: 15px;
+    height: 15px;
+}
+
+#expense-report-icon {
+    width: 25px;
+    height: 25px;
+}
+
+a img {
+    display: none;
+}

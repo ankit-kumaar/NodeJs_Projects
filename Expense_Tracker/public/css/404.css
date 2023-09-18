@@ -1,0 +1,41 @@
+
+#page-not-found{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+#page-not-found-image{
+    width: 50%;
+   
+}
+
+#page-not-found-text{
+
+    text-align: center;
+    width: 50%;
+   
+}
+
+#page-not-found-text h1{
+    font-size: 70px;
+}
+
+#page-not-found-image img{
+    max-height:100%; 
+    max-width:100%;
+    width: 80%;
+}
+
+button{
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3b98b7;
+    color: white;
+}
+
+button:hover{
+    background-color: teal;
+}

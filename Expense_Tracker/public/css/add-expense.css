@@ -1,0 +1,65 @@
+/* css for add expense form */
+
+.form-container {
+    width: 35%;
+    margin: auto;
+    margin-top: 70px;
+    padding: 40px 40px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2)
+}
+
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid#CACACA;
+    border: none;
+    border-bottom: 1px solid#CACACA;
+    margin-top: 20px;
+    font-size: medium;
+    box-sizing: border-box;
+    outline: none;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid#CACACA;
+    border: none;
+    border-bottom: 1px solid#CACACA;
+    margin-top: 20px;
+    font-size: medium;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: medium;
+    color: white;
+    box-sizing: border-box;
+    border: none;
+    background-color: #3AAFA9;
+    cursor: pointer;
+
+}
+
+.form-container button:hover {
+    background-color: #2B7A78
+}
+
+#form-submit-message{
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    color:rgb(3, 167, 3);
+    font-size: large;
+    font-weight: bold;
+}
+
+#add-expense-form h2{
+    font-size: x-large;
+    color: teal;
+}

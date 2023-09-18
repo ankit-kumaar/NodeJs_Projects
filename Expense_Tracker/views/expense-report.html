@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Expense Report</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/expense-report.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo"><img src="/images/expenses.png" alt=""> EXPENSE TRACKER</div>
+        <div id="premium-user">You are Premium User</div>
+        <button id="logout-btn">Logout</button>
+
+    </header>
+
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="/add-expense"><img src="/images/add-expense-icon.png" alt="" id="add-expense-icon"> Add
+                    Expense</a></li>
+            <li><a href="/expense-table"><a href="/expense-table"><img src="/images/view-expense-icon.png" alt=""
+                            id="view-expense-icon">Expense Table</a></li>
+            <li id="leaderboard-link" style="display: none;"><a href="/premium/leaderboard-page"><img
+                        src="/images/leaderboard-icon.png" alt="" id="leaderboard-icon">Leaderboard</a>
+            </li>
+            <li class="active" id="expense-report" style="display: none;"><a href="/premium/expense-report-page"
+                    class="active"> <img src="/images/expense-report-icon.png" alt="" id="add-expense-icon"> Expense
+                    Report</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+
+        <div id="report-btns">
+            <button id="download-report-btn">Download Report</button>
+        </div>
+
+        <div>
+            <h2>Expense Report Download History</h2>
+
+            <table id="expense-report-download-history-table">
+                <thead id="expense-report-download-history-table-head">
+                    <tr>
+                        <th>File URL</th>
+                        <th> Downloaded on</th>
+                    </tr>
+                </thead>
+    
+                <tbody id="expense-report-download-history-table-body">
+    
+                </tbody>
+
+            </table>
+        </div>
+
+        <!-- <h2>Weekly Report</h2> -->
+
+        <!-- weekly expense table  -->
+
+        <!-- <table class="expense-report-table" id="weekly-expense-table">
+            <thead id="weekly-expense-table-head">
+                <tr>
+
+                    <th class="amount"> Amount</th>
+                    <th class="description"> Description</th>
+                    <th class="date"> Expense Date</th>
+                    <th class="category"> Category</th>
+
+                </tr>
+            </thead>
+
+            <tbody id="weekly-expense-table-body">
+
+            </tbody>
+
+        </table> -->
+
+
+        <!-- <h2>Monthly Report</h2> -->
+
+        <!-- <table class="expense-report-table" id="monthly-expense-table">
+            <thead id="monthly-expense-table-head">
+                <tr>
+
+                    <th class="amount"> Amount</th>
+                    <th class="description"> Description</th>
+                    <th class="date"> Expense Date</th>
+                    <th class="category"> Category</th>
+
+                </tr>
+            </thead>
+
+            <tbody id="monthly-expense-table-body">
+
+            </tbody>
+
+        </table> -->
+
+        <!-- <h2>Yearly Report</h2>
+
+        <table class="expense-report-table" id="monthly-expense-table">
+            <thead id="monthly-expense-table-head">
+                <tr>
+
+                    <th> Month</th>
+                    <th> Income</th>
+                    <th> Expense</th>
+                    <th> Balance</th>
+
+                </tr>
+            </thead>
+
+            <tbody id="monthly-expense-table-body">
+
+            </tbody>
+
+        </table> -->
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/expense-report.js"></script>
+    <script src="/js/fix-navbar.js"></script>
+    <script src="/js/logout.js"></script>
+
+</body>
+
+</html>

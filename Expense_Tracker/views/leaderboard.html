@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leaderboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/leaderboard.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo"><img src="/images/expenses.png" alt=""> EXPENSE TRACKER</div>
+        <div id="premium-user">You are Premium User</div>
+        <button id="logout-btn">Logout</button>
+
+    </header>
+
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="/add-expense"><img src="/images/add-expense-icon.png" alt="" id="add-expense-icon"> Add Expense</a></li>
+            <li><a href="/expense-table"><a href="/expense-table"><img src="/images/view-expense-icon.png" alt="" id="view-expense-icon">Expense Table</a></li>
+            <li class="active" id="leaderboard-link" style="display: none;"><a href="/premium/leaderboard-page" class="active"><img src="/images/leaderboard-icon.png" alt="" id="leaderboard-icon">Leaderboard</a></li>
+            <li id="expense-report" style="display: none;"><a href="/premium/expense-report-page"> <img src="/images/expense-report-icon.png" alt="" id="add-expense-icon"> Expense Report</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+
+       <!-- leaderboard table  -->
+
+       <table class="leaderboard-table" id="leaderboard-table">
+        <thead id="leaderboard-table-head">
+            <tr>
+
+                <th class="rank"> Rank</th>
+                <th class="name"> Name</th>
+                <th class="total-expense"> Total Expense</th>
+                
+            </tr>
+        </thead>
+
+        <tbody id="leaderboard-table-body">
+
+        </tbody>
+
+    </table>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/leaderboard.js"></script>
+    <script src="/js/logout.js"></script>
+
+</body>
+
+</html>
