@@ -12,7 +12,7 @@ exports.authenticate = async (req, res, next) => {
         if (token === undefined) {
             return res.status(401).json({ message: 'you are not currently logged in' })
         }
-        const user = jwt.verify(token, 'Sourabh@8989')
+        const user = jwt.verify(token, 'Ankitk7')
         const user1 = await User.findByPk(user.userId)
         if(user1===null){
            return res.status(401).json({ message: 'authentication error' })

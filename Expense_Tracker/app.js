@@ -19,25 +19,6 @@ const DownloadedExpenseReport = require('./models/downloadedExpenseReport')
 
 const pageNotFoundMiddleware = require('./middlewares/404')
 
-
-// app.use(
-//     helmet({
-//         contentSecurityPolicy: {
-//             directives: {
-//                 ...helmet.contentSecurityPolicy.getDefaultDirectives(),
-//                 "script-src": ['self', 'unsafe-inline', 'data:',
-//                     'http://localhost:3000',
-//                     'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js',
-//                     'https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js',
-//                     'https://checkout.razorpay.com/v1/checkout.js'],
-
-//                 'frame-src': ['self', 'https://checkout.razorpay.com/v1/checkout.js']
-//             },
-//         },
-//         crossOriginEmbedderPolicy: false,
-//     })
-// )
-
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
