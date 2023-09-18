@@ -1,4 +1,3 @@
-const { CostExplorer } = require('aws-sdk')
 const path = require('path')
 const Expense = require('../models/expense')
 const User = require('../models/user')
