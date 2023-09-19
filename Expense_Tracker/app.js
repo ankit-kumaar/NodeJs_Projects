@@ -51,3 +51,4 @@ sequelize.sync({force:true})
         console.log(error)
     })
 
+//jytkdhfg
